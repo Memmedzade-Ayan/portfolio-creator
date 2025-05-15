@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  text-decoration: none;
+  margin: 0;
+}
+
+.roboto-Normal {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+.roboto-Bold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav {
+  display: none;
+}
+.logo {
+  width: 200px;
+}
+
+.introduction {
+  padding: 10px;
+}
+
+.introduction .leftside h1 {
+  font-size: 31px;
+}
+
+.introduction .leftside h1 span {
+  color: #ff8a56;
+}
+
+.introduction .leftside article {
+  color: #666;
+  margin: 14px 0;
+}
+
+.btnside .callbtn {
+  padding: 15px;
+  background: #111;
+  color: #fff;
+  border: none;
+}
+
+.btnside .roboto-Normal {
+  color: #111;
+}
+
+.btnside .callbtn {
+  margin-right: 15px;
+}
+.rightside .man {
+  width: 290px;
+}
+
+@media (min-width: 375px) {
+  .introduction .leftside h1 {
+    font-size: 43px;
+  }
+  .introduction .leftside article {
+    font-size: 16px;
+  }
+
+  .btnside .callbtn {
+    padding: 20px;
+  }
+
+  .rightside .man {
+    width: 310px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  header .logo {
+    width: 200px;
+  }
+  header nav {
+    display: flex;
+  }
+  header .fa-bars {
+    display: none;
+  }
+
+  header nav a {
+    margin-left: 20px;
+    color: #000;
+  }
+
+  .introduction {
+    padding: 20px;
+    display: flex;
+  }
+  .introduction .leftside h1 {
+    font-size: 52px;
+  }
+  .introduction .leftside article {
+    font-size: 16px;
+  }
+  .introduction .leftside article {
+    margin: 17px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 30px;
+  }
+  header nav a {
+    margin-left: 40px;
+  }
+
+  header nav {
+    transform: translateX(-50px);
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 40px;
+  }
+  .introduction {
+    padding: 40px;
+  }
+  .introduction .leftside h1 {
+    font-size: 75px;
+  }
+  .rightside .man {
+    width: 500px;
+  }
+  .introduction .leftside article {
+    margin: 22px 0;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .rightside .man {
+    width: 705px;
+  }
+  .introduction .leftside h1 {
+    font-size: 115px;
+  }
+  .introduction .leftside article {
+    margin: 30px 0;
+    font-size: 20px;
+  }
+}
